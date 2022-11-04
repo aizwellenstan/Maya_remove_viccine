@@ -4,7 +4,13 @@ will auto make a bkp folder under current directory
 run scanVirus.bat
 
 ## USAGE
-copy all files in this folder to the directory you want to scan
+copy 
+```
+delete-maya-virus_windows_x64.exe
+scanVirus.bat
+vicine_template
+```
+to the directory you want to scan
 run scanVirus.bat
 
 move bkp folder to somewhere eles
