@@ -1,19 +1,3 @@
-SOURCE FROM https://github.com/apo5tol/delete-maya-virus
-## DELETE MAYA Virus
-will auto make a bkp folder under current directory
-run scanVirus.bat
+sourceCode https://github.com/aizwellenstan/Maya_remove_vicine
 
-## USAGE
-copy 
-```
-delete-maya-virus_windows_x64.exe
-scanVirus.bat
-vicine_template
-```
-to the directory you want to scan
-run scanVirus.bat
-
-move bkp folder to somewhere eles
-
-## BKP FILES POSITION
-in ./bkp
+copy all files to folder u want to scan run scanVirus_2020.4.bat
