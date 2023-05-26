@@ -1,0 +1,1 @@
+for /r %%i in (*.ma) do delete-maya-virus_windows_x64.exe %%i
