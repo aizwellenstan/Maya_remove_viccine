@@ -3,10 +3,10 @@ import maya.OpenMaya as om
 import maya.cmds as cmds
 
 def killVaccineNodes(clientData):
-    scriptNodes = cmds.ls('breed_gene', typ='script')
+    scriptNodes = cmds.ls('breed_gene*', typ='script')
     if scriptNodes:
         cmds.delete(scriptNodes)
-    scriptNodes = cmds.ls('vaccine_gene', typ='script')
+    scriptNodes = cmds.ls('vaccine_gene*', typ='script')
     if scriptNodes:
         cmds.delete(scriptNodes)
 
