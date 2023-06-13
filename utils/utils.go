@@ -10,9 +10,13 @@ import (
 
 var emptySymbol = []byte("")
 
-var vaccineVirusTemplate = []byte("createNode script -n \"vaccine_gene\";")
-var vaccineGeneNodeRegexp = regexp.MustCompile("createNode script -n \"vaccine_gene\";[\\s\\S]+leukocyte\\.antivirus\\(\\)(.+)?\\s")
-var breedGeneNodeRegexp = regexp.MustCompile("createNode script -n \"breed_gene\";[\\s\\S]+setAttr \".stp\" 1;(.+)?\\s")
+// var vaccineVirusTemplate = []byte("createNode script -n \"vaccine_gene\";")
+// var vaccineGeneNodeRegexp = regexp.MustCompile("createNode script -n \"vaccine_gene\";[\\s\\S]+leukocyte\\.antivirus\\(\\)(.+)?\\s")
+// var breedGeneNodeRegexp = regexp.MustCompile("createNode script -n \"breed_gene\";[\\s\\S]+setAttr \".stp\" 1;(.+)?\\s")
+
+var vaccineVirusTemplate = []byte("createNode script -n \"vaccine_gene")
+var vaccineGeneNodeRegexp = regexp.MustCompile("createNode script -n \"vaccine_gene[\\s\\S]+leukocyte\\.antivirus\\(\\)(.+)?\\s")
+var breedGeneNodeRegexp = regexp.MustCompile("createNode script -n \"breed_gene[\\s\\S]+setAttr \".stp\" 1;(.+)?\\s")
 
 var mayaMelVirusTemplate = []byte("MayaMelUIConfigurationFile")
 var mayaMelVirusNodeRegexp = regexp.MustCompile("createNode script -n \"MayaMelUIConfigurationFile\"[\\s\\S]+setAttr \".st\" 1;(.+)?\\s")
